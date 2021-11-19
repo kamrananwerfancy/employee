@@ -1,0 +1,56 @@
+
+.mat-mini-fab.mat-accent {
+  background-color: #002a66;
+}
+table {
+  width: 100%;
+ box-shadow: -10px 0px 8px -10px #000000, 8px 0px 8px -7px #000000, 0px 0px 0px 0px rgb(26 68 255 / 0%)
+}
+.table>:not(:first-child) {
+  border-top: 1px solid currentColor;
+}
+.mat-icon-button {
+  padding: 0;
+  min-width: 0;
+  width: 35px;
+  height: 25px;
+  flex-shrink: 0;
+  line-height: 22px;
+  border-radius: 50%;
+}
+th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
+  padding: 12px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+.mat-header-row{
+  font-weight: bold;
+}
+.table-bordered {
+  border-width: 2px;
+}
+tr.mat-header-row {
+  height: 40px;
+}
+th{
+  font-weight: bold;
+    font-size: 14px;
+}
+.pagination {
+  margin-left: 0;
+  padding: 5px;
+  margin-bottom: 0rem;
+  border: 1px solid;
+  background-color: #002a66;
+  color: white;
+  border-radius: 17px;
+  justify-content: center;
+  /* display: flex; */
+  height: 39px;
+  /* align-items: center; */
+}
+.ngx-pagination a, .ngx-pagination button {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}

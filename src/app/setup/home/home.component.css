@@ -1,0 +1,19 @@
+.card{
+height: 9vh;
+}
+.card-content{
+text-align: center;
+color: white;
+}
+.blue{
+  background-color: rgb(85 85 187);
+}
+.red{
+  background-color: rgb(106 95 15);
+}
+.yellow{
+  background-color: #a75050;
+}
+h3{
+  margin: 0;
+}

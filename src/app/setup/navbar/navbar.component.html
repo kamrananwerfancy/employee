@@ -1,0 +1,111 @@
+<!-- <mat-toolbar class="mat-elevation-z8"> -->
+  <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+    <mat-icon *ngIf="!sidenav.opened">
+      menu
+    </mat-icon>
+    <mat-icon *ngIf="sidenav.opened">
+      close
+    </mat-icon>
+  </button>
+  <!-- <div class="d-flex justify-content-between w-100 align-items-center">
+    <h2>Human Recourse</h2>
+  <img class="avatar1" src="../../../assets/images/kamranprofile.jpg" />
+</div> -->
+<!-- </mat-toolbar> -->
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+
+    <!-- <img class="avatar mat-elevation-z8" src="../../../assets/images/kamranprofile.jpg" />
+
+    <h4 class="name">Kamran Anwer</h4>
+    <p class="designation">Software Engineer</p> -->
+<div class="logo2">
+<div class="logo1">
+    <img class="logo"  src="../../../assets/images/Logo.svg" alt="Logo">
+  </div>
+</div>
+    <img class="avatar mat-elevation-z8" src="../../../assets/images/kamranprofile.jpg" />
+<div class="d-flex justify-content-between">
+    <h4 class="name text-center">{{userName}}</h4>
+   <button matTooltip="Log Out" (click)="signOut()" mat-button >
+      <mat-icon>power_settings_new</mat-icon>
+    </button>
+
+  </div>
+    <!-- <p class="designation">Software Engineer</p> -->
+    <!-- <div class="d-flex justify-content-between">
+    <h4 class="name">Kamran Anwer</h4>
+    <img class="avatar1" src="../../../assets/images/kamranprofile.jpg" />
+    <button mat-icon-button  >
+      <mat-icon >
+        logout
+      </mat-icon>
+    </button>
+  </div> -->
+    <mat-divider></mat-divider>
+    <mat-expansion-panel class="bgcolor-1" [expanded]="step1 ===1" (opened)="setstep1(1)">
+      <mat-expansion-panel-header>
+
+        <mat-icon>dashboard</mat-icon> <span class="menu-button">Dashboard</span>
+
+      </mat-expansion-panel-header>
+
+      <a [routerLink]="['/home']"><button mat-button routerLinkActive="selected" class="menu-button">
+          <mat-icon>home</mat-icon>
+
+          <span>Home</span>
+
+        </button></a>
+    </mat-expansion-panel>
+    <mat-expansion-panel class="bgcolor-1" [expanded]="step1 ===2" (opened)="setstep1(2)">
+      <mat-expansion-panel-header>
+
+        <mat-icon>settings</mat-icon> <span class="menu-button">Setups</span>
+
+      </mat-expansion-panel-header>
+
+      <a [routerLink]="['/employee']"><button mat-button routerLinkActive="selected" class="menu-button">
+
+          <mat-icon>person</mat-icon> <span>Department</span>
+
+          </button></a>
+      <a [routerLink]="['/employee']"><button mat-button routerLinkActive="selected" class="menu-button">
+
+          <mat-icon>person</mat-icon> <span>Designation</span>
+
+          </button></a>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel class="bgcolor-1" [expanded]="step1 === 3" (opened)="setstep1(3)">
+
+      <mat-expansion-panel-header>
+        <mat-icon>person</mat-icon> <span class="menu-button">Transaction</span>
+
+      </mat-expansion-panel-header>
+
+      <a [routerLink]="['/employee']"><button mat-button routerLinkActive="selected" class="menu-button">
+
+          <mat-icon>person</mat-icon> <span>Employees</span>
+
+          </button></a>
+      <a [routerLink]="['/salaryIssue']"><button mat-button routerLinkActive="selected" class="menu-button">
+          <mat-icon>local_atm</mat-icon> <span>Salary Issue</span>
+
+          </button></a>
+      <a [routerLink]="['/attendance']"><button mat-button routerLinkActive="selected" class="menu-button">
+          <mat-icon>local_atm</mat-icon> <span>Attendance</span>
+
+          </button></a>
+
+    </mat-expansion-panel>
+
+
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="mainbody">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

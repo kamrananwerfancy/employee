@@ -1,0 +1,13 @@
+.mat-mini-fab,.mat-button-icon{
+  background-color: #002a66;
+  color: white;
+  }
+  .mat-icon-button {
+    padding: 0;
+    min-width: 0;
+    width: 35px;
+    height: 30px;
+    flex-shrink: 0;
+    line-height: 22px;
+    border-radius: 50%;
+}

@@ -1,0 +1,458 @@
+<div class="d-flex justify-content-between align-items-baseline mb-2">
+  <mat-card-title class="page-heading">Employee Profile</mat-card-title>
+  <button mat-icon-button mat-dialog-close>
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
+<div class="row">
+  <div class="col-md-1">
+    <mat-form-field>
+      <input [(ngModel)]="model.userId" name="userId" disabled matInput required placeholder="User Id" />
+    </mat-form-field>
+  </div>
+  <div class="col-md-3">
+    <mat-form-field>
+      <input [(ngModel)]="model.firstName" name="firstName"  matInput required placeholder="First name" />
+      <mat-error>First Name is Required</mat-error>
+    </mat-form-field>
+  </div>
+  <div class="col-md-2">
+    <mat-form-field>
+      <input [(ngModel)]="model.lastName"  matInput placeholder="Last name" />
+    </mat-form-field>
+  </div>
+
+  <div class="col-md-3">
+    <mat-form-field>
+      <input [(ngModel)]="model.email"  matInput required placeholder="Email" />
+    </mat-form-field>
+  </div>
+  <div class="col-md-3">
+    <mat-form-field>
+      <input [(ngModel)]="model.phone"  matInput placeholder="Phone" />
+    </mat-form-field>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-3">
+    <mat-form-field>
+      <mat-label>City</mat-label>
+      <mat-select [(ngModel)]="model.country" >
+    <mat-option value="Islamabad">Islamabad</mat-option>
+    <mat-option value="Ahmed Nager Chatha">Ahmed Nager Chatha</mat-option>
+    <mat-option value="Ahmadpur East">Ahmadpur East</mat-option>
+    <mat-option value="Ali Khan Abad">Ali Khan Abad</mat-option>
+    <mat-option value="Alipur">Alipur</mat-option>
+    <mat-option value="Arifwala">Arifwala</mat-option>
+    <mat-option value="Attock">Attock</mat-option>
+    <mat-option value="Bhera">Bhera</mat-option>
+    <mat-option value="Bhalwal">Bhalwal</mat-option>
+    <mat-option value="Bahawalnagar">Bahawalnagar</mat-option>
+    <mat-option value="Bahawalpur">Bahawalpur</mat-option>
+    <mat-option value="Bhakkar">Bhakkar</mat-option>
+    <mat-option value="Burewala">Burewala</mat-option>
+    <mat-option value="Chillianwala">Chillianwala</mat-option>
+    <mat-option value="Chakwal">Chakwal</mat-option>
+    <mat-option value="Chichawatni">Chichawatni</mat-option>
+    <mat-option value="Chiniot">Chiniot</mat-option>
+    <mat-option value="Chishtian">Chishtian</mat-option>
+    <mat-option value="Daska">Daska</mat-option>
+    <mat-option value="Darya Khan">Darya Khan</mat-option>
+    <mat-option value="Dera Ghazi Khan">Dera Ghazi Khan</mat-option>
+    <mat-option value="Dhaular">Dhaular</mat-option>
+    <mat-option value="Dina">Dina</mat-option>
+    <mat-option value="Dinga">Dinga</mat-option>
+    <mat-option value="Dipalpur">Dipalpur</mat-option>
+    <mat-option value="Faisalabad">Faisalabad</mat-option>
+    <mat-option value="Ferozewala">Ferozewala</mat-option>
+    <mat-option value="Fateh Jhang">Fateh Jang</mat-option>
+    <mat-option value="Ghakhar Mandi">Ghakhar Mandi</mat-option>
+    <mat-option value="Gojra">Gojra</mat-option>
+    <mat-option value="Gujranwala">Gujranwala</mat-option>
+    <mat-option value="Gujrat">Gujrat</mat-option>
+    <mat-option value="Gujar Khan">Gujar Khan</mat-option>
+    <mat-option value="Hafizabad">Hafizabad</mat-option>
+    <mat-option value="Haroonabad">Haroonabad</mat-option>
+    <mat-option value="Hasilpur">Hasilpur</mat-option>
+    <mat-option value="Haveli Lakha">Haveli Lakha</mat-option>
+    <mat-option value="Jatoi">Jatoi</mat-option>
+    <mat-option value="Jalalpur">Jalalpur</mat-option>
+    <mat-option value="Jattan">Jattan</mat-option>
+    <mat-option value="Jampur">Jampur</mat-option>
+    <mat-option value="Jaranwala">Jaranwala</mat-option>
+    <mat-option value="Jhang">Jhang</mat-option>
+    <mat-option value="Jhelum">Jhelum</mat-option>
+    <mat-option value="Kalabagh">Kalabagh</mat-option>
+    <mat-option value="Karor Lal Esan">Karor Lal Esan</mat-option>
+    <mat-option value="Kasur">Kasur</mat-option>
+    <mat-option value="Kamalia">Kamalia</mat-option>
+    <mat-option value="Kamoke">Kamoke</mat-option>
+    <mat-option value="Khanewal">Khanewal</mat-option>
+    <mat-option value="Khanpur">Khanpur</mat-option>
+    <mat-option value="Kharian">Kharian</mat-option>
+    <mat-option value="Khushab">Khushab</mat-option>
+    <mat-option value="Kot Addu">Kot Addu</mat-option>
+    <mat-option value="Jauharabad">Jauharabad</mat-option>
+    <mat-option value="Lahore">Lahore</mat-option>
+    <mat-option value="Lalamusa">Lalamusa</mat-option>
+    <mat-option value="Layyah">Layyah</mat-option>
+    <mat-option value="Liaquat Pur">Liaquat Pur</mat-option>
+    <mat-option value="Lodhran">Lodhran</mat-option>
+    <mat-option value="Malakwal">Malakwal</mat-option>
+    <mat-option value="Mamoori">Mamoori</mat-option>
+    <mat-option value="Mailsi">Mailsi</mat-option>
+    <mat-option value="Mandi Bahauddin">Mandi Bahauddin</mat-option>
+    <mat-option value="Mian Channu">Mian Channu</mat-option>
+    <mat-option value="Mianwali">Mianwali</mat-option>
+    <mat-option value="Multan">Multan</mat-option>
+    <mat-option value="Murree">Murree</mat-option>
+    <mat-option value="Muridke">Muridke</mat-option>
+    <mat-option value="Mianwali Bangla">Mianwali Bangla</mat-option>
+    <mat-option value="Muzaffargarh">Muzaffargarh</mat-option>
+    <mat-option value="Narowal">Narowal</mat-option>
+    <mat-option value="Nankana Sahib">Nankana Sahib</mat-option>
+    <mat-option value="Okara">Okara</mat-option>
+    <mat-option value="Renala Khurd">Renala Khurd</mat-option>
+    <mat-option value="Pakpattan">Pakpattan</mat-option>
+    <mat-option value="Pattoki">Pattoki</mat-option>
+    <mat-option value="Pir Mahal">Pir Mahal</mat-option>
+    <mat-option value="Qaimpur">Qaimpur</mat-option>
+    <mat-option value="Qila Didar Singh">Qila Didar Singh</mat-option>
+    <mat-option value="Rabwah">Rabwah</mat-option>
+    <mat-option value="Raiwind">Raiwind</mat-option>
+    <mat-option value="Rajanpur">Rajanpur</mat-option>
+    <mat-option value="Rahim Yar Khan">Rahim Yar Khan</mat-option>
+    <mat-option value="Rawalpindi">Rawalpindi</mat-option>
+    <mat-option value="Sadiqabad">Sadiqabad</mat-option>
+    <mat-option value="Safdarabad">Safdarabad</mat-option>
+    <mat-option value="Sahiwal">Sahiwal</mat-option>
+    <mat-option value="Sangla Hill">Sangla Hill</mat-option>
+    <mat-option value="Sarai Alamgir">Sarai Alamgir</mat-option>
+    <mat-option value="Sargodha">Sargodha</mat-option>
+    <mat-option value="Shakargarh">Shakargarh</mat-option>
+    <mat-option value="Sheikhupura">Sheikhupura</mat-option>
+    <mat-option value="Sialkot">Sialkot</mat-option>
+    <mat-option value="Sohawa">Sohawa</mat-option>
+    <mat-option value="Soianwala">Soianwala</mat-option>
+    <mat-option value="Siranwali">Siranwali</mat-option>
+    <mat-option value="Talagang">Talagang</mat-option>
+    <mat-option value="Taxila">Taxila</mat-option>
+    <mat-option value="Toba Tek Singh">Toba Tek Singh</mat-option>
+    <mat-option value="Vehari">Vehari</mat-option>
+    <mat-option value="Wah Cantonment">Wah Cantonment</mat-option>
+    <mat-option value="Wazirabad">Wazirabad</mat-option>
+    <mat-option value="Badin">Badin</mat-option>
+    <mat-option value="Bhirkan">Bhirkan</mat-option>
+    <mat-option value="Rajo Khanani">Rajo Khanani</mat-option>
+    <mat-option value="Chak">Chak</mat-option>
+    <mat-option value="Dadu">Dadu</mat-option>
+    <mat-option value="Digri">Digri</mat-option>
+    <mat-option value="Diplo">Diplo</mat-option>
+    <mat-option value="Dokri">Dokri</mat-option>
+    <mat-option value="Ghotki">Ghotki</mat-option>
+    <mat-option value="Haala">Haala</mat-option>
+    <mat-option value="Hyderabad">Hyderabad</mat-option>
+    <mat-option value="Islamkot">Islamkot</mat-option>
+    <mat-option value="Jacobabad">Jacobabad</mat-option>
+    <mat-option value="Jamshoro">Jamshoro</mat-option>
+    <mat-option value="Jungshahi">Jungshahi</mat-option>
+    <mat-option value="Kandhkot">Kandhkot</mat-option>
+    <mat-option value="Kandiaro">Kandiaro</mat-option>
+    <mat-option value="Karachi">Karachi</mat-option>
+    <mat-option value="Kashmore">Kashmore</mat-option>
+    <mat-option value="Keti Bandar">Keti Bandar</mat-option>
+    <mat-option value="Khairpur">Khairpur</mat-option>
+    <mat-option value="Kotri">Kotri</mat-option>
+    <mat-option value="Larkana">Larkana</mat-option>
+    <mat-option value="Matiari">Matiari</mat-option>
+    <mat-option value="Mehar">Mehar</mat-option>
+    <mat-option value="Mirpur Khas">Mirpur Khas</mat-option>
+    <mat-option value="Mithani">Mithani</mat-option>
+    <mat-option value="Mithi">Mithi</mat-option>
+    <mat-option value="Mehrabpur">Mehrabpur</mat-option>
+    <mat-option value="Moro">Moro</mat-option>
+    <mat-option value="Nagarparkar">Nagarparkar</mat-option>
+    <mat-option value="Naudero">Naudero</mat-option>
+    <mat-option value="Naushahro Feroze">Naushahro Feroze</mat-option>
+    <mat-option value="Naushara">Naushara</mat-option>
+    <mat-option value="Nawabshah">Nawabshah</mat-option>
+    <mat-option value="Nazimabad">Nazimabad</mat-option>
+    <mat-option value="Qambar">Qambar</mat-option>
+    <mat-option value="Qasimabad">Qasimabad</mat-option>
+    <mat-option value="Ranipur">Ranipur</mat-option>
+    <mat-option value="Ratodero">Ratodero</mat-option>
+    <mat-option value="Rohri">Rohri</mat-option>
+    <mat-option value="Sakrand">Sakrand</mat-option>
+    <mat-option value="Sanghar">Sanghar</mat-option>
+    <mat-option value="Shahbandar">Shahbandar</mat-option>
+    <mat-option value="Shahdadkot">Shahdadkot</mat-option>
+    <mat-option value="Shahdadpur">Shahdadpur</mat-option>
+    <mat-option value="Shahpur Chakar">Shahpur Chakar</mat-option>
+    <mat-option value="Shikarpaur">Shikarpaur</mat-option>
+    <mat-option value="Sukkur">Sukkur</mat-option>
+    <mat-option value="Tangwani">Tangwani</mat-option>
+    <mat-option value="Tando Adam Khan">Tando Adam Khan</mat-option>
+    <mat-option value="Tando Allahyar">Tando Allahyar</mat-option>
+    <mat-option value="Tando Muhammad Khan">Tando Muhammad Khan</mat-option>
+    <mat-option value="Thatta">Thatta</mat-option>
+    <mat-option value="Umerkot">Umerkot</mat-option>
+    <mat-option value="Warah">Warah</mat-option>
+    <mat-option value="Abbottabad">Abbottabad</mat-option>
+    <mat-option value="Adezai">Adezai</mat-option>
+    <mat-option value="Alpuri">Alpuri</mat-option>
+    <mat-option value="Akora Khattak">Akora Khattak</mat-option>
+    <mat-option value="Ayubia">Ayubia</mat-option>
+    <mat-option value="Banda Daud Shah">Banda Daud Shah</mat-option>
+    <mat-option value="Bannu">Bannu</mat-option>
+    <mat-option value="Batkhela">Batkhela</mat-option>
+    <mat-option value="Battagram">Battagram</mat-option>
+    <mat-option value="Birote">Birote</mat-option>
+    <mat-option value="Chakdara">Chakdara</mat-option>
+    <mat-option value="Charsadda">Charsadda</mat-option>
+    <mat-option value="Chitral">Chitral</mat-option>
+    <mat-option value="Daggar">Daggar</mat-option>
+    <mat-option value="Dargai">Dargai</mat-option>
+    <mat-option value="Darya Khan">Darya Khan</mat-option>
+    <mat-option value="Dera Ismail Khan">Dera Ismail Khan</mat-option>
+    <mat-option value="Doaba">Doaba</mat-option>
+    <mat-option value="Dir">Dir</mat-option>
+    <mat-option value="Drosh">Drosh</mat-option>
+    <mat-option value="Hangu">Hangu</mat-option>
+    <mat-option value="Haripur">Haripur</mat-option>
+    <mat-option value="Karak">Karak</mat-option>
+    <mat-option value="Kohat">Kohat</mat-option>
+    <mat-option value="Kulachi">Kulachi</mat-option>
+    <mat-option value="Lakki Marwat">Lakki Marwat</mat-option>
+    <mat-option value="Latamber">Latamber</mat-option>
+    <mat-option value="Madyan">Madyan</mat-option>
+    <mat-option value="Mansehra">Mansehra</mat-option>
+    <mat-option value="Mardan">Mardan</mat-option>
+    <mat-option value="Mastuj">Mastuj</mat-option>
+    <mat-option value="Mingora">Mingora</mat-option>
+    <mat-option value="Nowshera">Nowshera</mat-option>
+    <mat-option value="Paharpur">Paharpur</mat-option>
+    <mat-option value="Pabbi">Pabbi</mat-option>
+    <mat-option value="Peshawar">Peshawar</mat-option>
+    <mat-option value="Saidu Sharif">Saidu Sharif</mat-option>
+    <mat-option value="Shorkot">Shorkot</mat-option>
+    <mat-option value="Shewa Adda">Shewa Adda</mat-option>
+    <mat-option value="Swabi">Swabi</mat-option>
+    <mat-option value="Swat">Swat</mat-option>
+    <mat-option value="Tangi">Tangi</mat-option>
+    <mat-option value="Tank">Tank</mat-option>
+    <mat-option value="Thall">Thall</mat-option>
+    <mat-option value="Timergara">Timergara</mat-option>
+    <mat-option value="Tordher">Tordher</mat-option>
+    <mat-option value="Awaran">Awaran</mat-option>
+    <mat-option value="Barkhan">Barkhan</mat-option>
+    <mat-option value="Chagai">Chagai</mat-option>
+    <mat-option value="Dera Bugti">Dera Bugti</mat-option>
+    <mat-option value="Gwadar">Gwadar</mat-option>
+    <mat-option value="Harnai">Harnai</mat-option>
+    <mat-option value="Jafarabad">Jafarabad</mat-option>
+    <mat-option value="Jhal Magsi">Jhal Magsi</mat-option>
+    <mat-option value="Kacchi">Kacchi</mat-option>
+    <mat-option value="Kalat">Kalat</mat-option>
+    <mat-option value="Kech">Kech</mat-option>
+    <mat-option value="Kharan">Kharan</mat-option>
+    <mat-option value="Khuzdar">Khuzdar</mat-option>
+    <mat-option value="Killa Abdullah">Killa Abdullah</mat-option>
+    <mat-option value="Killa Saifullah">Killa Saifullah</mat-option>
+    <mat-option value="Kohlu">Kohlu</mat-option>
+    <mat-option value="Lasbela">Lasbela</mat-option>
+    <mat-option value="Lehri">Lehri</mat-option>
+    <mat-option value="Loralai">Loralai</mat-option>
+    <mat-option value="Mastung">Mastung</mat-option>
+    <mat-option value="Musakhel">Musakhel</mat-option>
+    <mat-option value="Nasirabad">Nasirabad</mat-option>
+    <mat-option value="Nushki">Nushki</mat-option>
+    <mat-option value="Panjgur">Panjgur</mat-option>
+    <mat-option value="Pishin Valley">Pishin Valley</mat-option>
+    <mat-option value="Quetta">Quetta</mat-option>
+    <mat-option value="Sherani">Sherani</mat-option>
+    <mat-option value="Sibi">Sibi</mat-option>
+    <mat-option value="Sohbatpur">Sohbatpur</mat-option>
+    <mat-option value="Washuk">Washuk</mat-option>
+    <mat-option value="Zhob">Zhob</mat-option>
+    <mat-option value="Ziarat">Ziarat</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="col-md-3">
+    <mat-form-field>
+      <mat-label>Select DOB</mat-label>
+      <input [(ngModel)]="model.dob" (dateChange)="ageCalculator()" matInput [matDatepicker]="picker" required />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+  <div class="col-md-3">
+    <mat-form-field>
+      <input [(ngModel)]="model.showAge" readonly matInput placeholder="Age" />
+    </mat-form-field>
+  </div>
+  <div class="col-md-3">
+    <mat-form-field>
+      <input [(ngModel)]="model.address"  matInput placeholder="Address" />
+    </mat-form-field>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-3">
+    <mat-radio-group [(ngModel)]="model.gender"  required>
+      <mat-radio-button  value="male"> Male </mat-radio-button>
+      <mat-radio-button   style="margin-left: 8px;" value="female"> Female </mat-radio-button>
+    </mat-radio-group>
+  </div>
+  <div class="col-md-3">
+    <mat-form-field>
+      <mat-label>Department</mat-label>
+      <mat-select [(ngModel)]="model.department" >
+        <mat-option  value="Admin">Admin</mat-option>
+        <mat-option  value="Staff">Staff</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="col-md-3">
+    <mat-form-field>
+      <mat-label>Designation</mat-label>
+      <mat-select [(ngModel)]="model.designation" >
+        <mat-option  value="Developer">Developer</mat-option>
+        <mat-option  value="Customer Care Officer">Customer Care Officer</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="col-md-3">
+    <mat-form-field>
+      <mat-label>Category</mat-label>
+      <mat-select [(ngModel)]="model.category" >
+        <mat-option  value="Admin">Admin</mat-option>
+        <mat-option  value="Staff">Staff</mat-option>
+        <mat-option  value="Teacher">Teacher</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</div>
+<mat-tab-group dynamicHeight>
+  <mat-tab  label="Past Employeement">
+    <div class="mt-3 row">
+      <div class="col-md-4">
+        <mat-form-field>
+          <input [(ngModel)]="model.companyName"   matInput placeholder="Company Name" />
+        </mat-form-field>
+      </div>
+      <div class="col-md-4">
+        <mat-form-field>
+          <mat-label>Leaving Date</mat-label>
+          <input [(ngModel)]="model.leavingDate" matInput [matDatepicker]="picker" required />
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+      <div class="col-md-4">
+        <mat-form-field>
+          <input [(ngModel)]="model.pastDesignation"   matInput placeholder="Past Designation" />
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+    <div class="col-md-12">
+        <mat-form-field >
+          <mat-label>Leaving Reason</mat-label>
+          <textarea matInput [(ngModel)]="model.leaveReason"
+                    ></textarea>
+        </mat-form-field>
+    </div>
+  </div>
+  </mat-tab>
+  <mat-tab label="Bank Details">
+    <div class="mt-3 row">
+    <div class="col-md-4">
+      <mat-form-field>
+        <input [(ngModel)]="model.bankName"   matInput placeholder="Bank Name" />
+      </mat-form-field>
+    </div>
+    <div class="col-md-4">
+      <mat-form-field>
+        <input [(ngModel)]="model.accountTitle"   matInput placeholder="Account Title" />
+      </mat-form-field>
+    </div>
+    <div class="col-md-4">
+      <mat-form-field>
+        <input [(ngModel)]="model.accountNo"   matInput placeholder="Account No" />
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <mat-form-field>
+      <input [(ngModel)]="model.nextofKin"   matInput placeholder="Next of Kin" />
+    </mat-form-field>
+  </div>
+  <div class="col-md-4">
+    <mat-form-field>
+      <input [(ngModel)]="model.kinCnic"   matInput placeholder="Next Of Kin CNIC" />
+    </mat-form-field>
+  </div>
+  <div class="col-md-4">
+    <mat-form-field>
+      <input [(ngModel)]="model.kinrelation"   matInput placeholder="Next Of Kin Relation" />
+    </mat-form-field>
+  </div>
+</div>
+ </mat-tab>
+  <mat-tab label="Employee Attendance">
+
+    <div class="row mt-3">
+    <div class="col-md-3">
+      <mat-form-field>
+        <mat-label>Start Date</mat-label>
+        <input [(ngModel)]="model.startDate" matInput [matDatepicker]="picker2" required />
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div class="col-md-3">
+      <mat-form-field>
+        <mat-label>End Date</mat-label>
+        <input [(ngModel)]="model.endDate" (dateChange)="getemployeeattendancewithDate()" matInput [matDatepicker]="picker3" required />
+        <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+        <mat-datepicker #picker3></mat-datepicker>
+      </mat-form-field>
+    </div>
+  </div>
+  <div *ngIf="!this.attendanceData || this.attendanceData.length<1" class="d-flex mt-5 justify-content-center">
+    <!-- <img style="height:auto;" src="../../../assets/images/nodata-found.png" alt=""> -->
+<h1>No Record Found</h1>
+  </div>
+    <table  *ngIf="!this.attendanceData || this.attendanceData.length>0" class="table  table-striped table-bordered table-md mt-3">
+      <thead>
+          <tr>
+              <th scope="col">#</th>
+              <th scope="col">Employee Name</th>
+              <th scope="col">Date</th>
+              <th scope="col">In Time</th>
+              <th scope="col">Out Time</th>
+              <th scope="col">Activity</th>
+
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let item of attendanceData  let i = index; ">
+              <th scope="row" >{{i+1}}</th>
+              <td>{{item.employeeName}}</td>
+              <td>{{item.date|date:'dd-MMM-yyyy'}}</td>
+              <td>{{item.inTime}}</td>
+              <td>{{item.outTime}}</td>
+              <td>{{item.activity}}</td>
+          </tr>
+
+      </tbody>
+    </table>
+     </mat-tab>
+</mat-tab-group>
+<div class="d-flex justify-content-end mt-2">
+  <button (click)="saveUser()" mat-raised-button>
+    Save
+  </button>
+</div>

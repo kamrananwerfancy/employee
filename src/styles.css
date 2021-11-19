@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+@import 'material-icons/iconfont/material-icons.css';
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+.mat-h1, .mat-headline, .mat-typography h1{
+  font: 400 24px/32px Roboto, "Helvetica Neue", sans-serif;
+  letter-spacing: normal;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+    padding: 0;
+}
+
+.page-heading{
+  font-size: 400;
+  color: #002a66;
+}
+a{
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.mat-mini-fab,.mat-button-icon,.mat-raised-button{
+background-color: #002a66;
+color: white;
+}
+mat-form-field{
+  width: 100%;
+}
