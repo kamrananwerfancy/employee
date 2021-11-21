@@ -67,14 +67,9 @@
 
       <a [routerLink]="['/employee']"><button mat-button routerLinkActive="selected" class="menu-button">
 
-          <mat-icon>person</mat-icon> <span>Department</span>
+        <mat-icon>person</mat-icon> <span>Employees</span>
 
-          </button></a>
-      <a [routerLink]="['/employee']"><button mat-button routerLinkActive="selected" class="menu-button">
-
-          <mat-icon>person</mat-icon> <span>Designation</span>
-
-          </button></a>
+        </button></a>
     </mat-expansion-panel>
 
     <mat-expansion-panel class="bgcolor-1" [expanded]="step1 === 3" (opened)="setstep1(3)">
@@ -84,11 +79,7 @@
 
       </mat-expansion-panel-header>
 
-      <a [routerLink]="['/employee']"><button mat-button routerLinkActive="selected" class="menu-button">
 
-          <mat-icon>person</mat-icon> <span>Employees</span>
-
-          </button></a>
       <a [routerLink]="['/salaryIssue']"><button mat-button routerLinkActive="selected" class="menu-button">
           <mat-icon>local_atm</mat-icon> <span>Salary Issue</span>
 

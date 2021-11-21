@@ -20,10 +20,10 @@ export class EmployeeformComponent implements OnInit {
   citeis: any = []
 
   getemployeeattendancewithDate(){
-  this.model.startDate = Datehelper.setDate(this.model.startDate)
-  this.model.endDate = Datehelper.setDate(this.model.endDate)
-  let startDate = this.model.startDate
-  let endDate= this.model.endDate
+  this.startDate = Datehelper.setDate(this.startDate)
+  this.endDate = Datehelper.setDate(this.endDate)
+  let startDate = this.startDate
+  let endDate= this.endDate
   let obj = this.allattendanceData.filter(
     (  m: { employeeId: any; date: string | number ; }) => m.employeeId == this.model.userId && m.date >= startDate && m.date <= endDate);
   // let obj = this.allattendanceData.filter((x:{employeeId: any})=> x.employeeId == this.model.userId)
@@ -88,10 +88,11 @@ else{
   //     this.citeis = data.data
   //   })
   // }
- 
+  startDate: any
+  endDate: any
   getDate(){
-    this.model.startDate = Datehelper.setDate(new Date)
-    this.model.endDate = Datehelper.setDate(new Date)
+    this.startDate = Datehelper.setDate(new Date)
+    this.endDate = Datehelper.setDate(new Date)
 
   }
   ngOnInit() {
